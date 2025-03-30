@@ -1,1 +1,1 @@
-Esse é o meu primeiro projeto com um Framewrok e com programação mobile.
+Esse é o meu primeiro projeto com um framework e com programação mobile.
