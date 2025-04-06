@@ -2,12 +2,12 @@ import { View, TextInput, Button, StyleSheet } from 'react-native';
 import Result from './Result';
 import { useState } from 'react';
 
-const FormIMC = () => {
+const FormIMC = () => {//inicialização das variáveis
   const [peso, setPeso] = useState('');
   const [altura, setAltura] = useState('');
   const [imc, setImc] = useState(null);
-  
-  const calcularIMC = () => {
+
+  const calcularIMC = () => {//função em js
     if (peso && altura) {
       const alturaMetros = parseFloat(altura) / 100;
       const imcCalculado = (parseFloat(peso) / (alturaMetros * alturaMetros)).toFixed(2);
@@ -15,7 +15,7 @@ const FormIMC = () => {
     }
   };
 
-  return (
+  return (//inserção do "html"
     <View style={styles.formContainer}>
       <TextInput
         style={styles.input}
@@ -37,7 +37,7 @@ const FormIMC = () => {
   );
 };
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({//CSS
   formContainer: {
     backgroundColor: '#f0f0f0',
     padding: 16,
