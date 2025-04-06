@@ -1,6 +1,7 @@
-import { View, TextInput, Button, StyleSheet } from 'react-native';
+import { View, TextInput, TouchableOpacity, StyleSheet, Text, Dimensions } from 'react-native';
 import Result from './Result';
 import { useState } from 'react';
+import Classification from './Classification';
 
 const FormIMC = () => {//inicialização das variáveis
   const [peso, setPeso] = useState('');
@@ -31,8 +32,11 @@ const FormIMC = () => {//inicialização das variáveis
         value={altura}
         onChangeText={setAltura}
       />
-      <Button title="Calcular IMC" onPress={calcularIMC} />
+      <TouchableOpacity style={styles.button} onPress={calcularIMC}>
+        <Text style={styles.buttonText}>Calcular IMC</Text>
+      </TouchableOpacity>
       {imc && <Result imc={imc} />}
+      {imc && <Classification imc={imc} />}
     </View>
   );
 };
@@ -42,15 +46,29 @@ const styles = StyleSheet.create({//CSS
     backgroundColor: '#f0f0f0',
     padding: 16,
     borderRadius: 10,
+    alignItems: 'center',
   },
   input: {
     height: 40,
+    width: Dimensions.get('window').width - 50,
     borderColor: 'gray',
     borderWidth: 1,
     marginBottom: 12,
     paddingHorizontal: 8,
     borderRadius: 5,
   },
+  button: {
+    backgroundColor: '#0f62fe',
+    padding: 10,
+    borderRadius: 50,
+    width: 220,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#ffffff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  }
 });
 
 export default FormIMC;
