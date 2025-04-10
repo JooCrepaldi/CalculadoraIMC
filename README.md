@@ -12,7 +12,7 @@
 
 ### Como fiz:
  - Classificação: Usei if para definir a classificação do IMC com base na resposta do usuário.
- - Personalização: Usei a função  <i>const styles = StyleSheet.create<i/>  para adicionar mais estilização ao projeto.
+ - Personalização: Usei a função  <i>const styles = StyleSheet.create</i>  para adicionar mais estilização ao projeto.
 
 ----
 
