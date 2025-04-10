@@ -21,6 +21,8 @@ const FormIMC = () => {//inicialização das variáveis
       <TextInput
         style={styles.input}
         placeholder="Peso (kg)"
+        placeholderTextColor="#c4c4c4"
+        color='#c4c4c4'
         keyboardType="numeric"
         value={peso}
         onChangeText={setPeso}
@@ -29,7 +31,9 @@ const FormIMC = () => {//inicialização das variáveis
         style={styles.input}
         placeholder="Altura (cm)"
         keyboardType="numeric"
+        color='#c4c4c4'
         value={altura}
+        placeholderTextColor="#c4c4c4"
         onChangeText={setAltura}
       />
       <TouchableOpacity style={styles.button} onPress={calcularIMC}>
@@ -43,7 +47,7 @@ const FormIMC = () => {//inicialização das variáveis
 
 const styles = StyleSheet.create({//CSS
   formContainer: {
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#42454f',
     padding: 16,
     borderRadius: 20,
     alignItems: 'center',
@@ -52,7 +56,7 @@ const styles = StyleSheet.create({//CSS
   input: {
     height: 40,
     width: Dimensions.get('window').width - 50,
-    borderColor: 'gray',
+    borderColor: '#c4c4c4',
     borderWidth: 1,
     marginBottom: 12,
     paddingHorizontal: 8,
@@ -64,11 +68,13 @@ const styles = StyleSheet.create({//CSS
     borderRadius: 50,
     width: 220,
     alignItems: 'center',
+    marginTop: 10,
+    elevation: 7,
   },
   buttonText: {
-    color: '#ffffff',
+    color: '#fff',
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: 'normal',
   }
 });
 

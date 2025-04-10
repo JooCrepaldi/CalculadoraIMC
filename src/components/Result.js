@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 24,
     textAlign: 'center',
-    color: '#333',
+    color: '#d6d6d6',
   },
 });
 

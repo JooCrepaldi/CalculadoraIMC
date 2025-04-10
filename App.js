@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Title from './src/components/Titles';
 import FormIMC from './src/components/formIMC';
 import Classification from './src/components/Classification';
+import Result from './src/components/Result';
 
 export default function App() {
   return (
@@ -18,6 +19,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     padding: 16,
-    backgroundColor: '#cccc',
+    backgroundColor: '#1d1f24',
   },
 });
