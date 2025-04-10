@@ -45,8 +45,9 @@ const styles = StyleSheet.create({//CSS
   formContainer: {
     backgroundColor: '#f0f0f0',
     padding: 16,
-    borderRadius: 10,
+    borderRadius: 20,
     alignItems: 'center',
+    elevation: 7,
   },
   input: {
     height: 40,
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({//CSS
     borderWidth: 1,
     marginBottom: 12,
     paddingHorizontal: 8,
-    borderRadius: 5,
+    borderRadius: 10,
   },
   button: {
     backgroundColor: '#0f62fe',
