@@ -12,5 +12,6 @@
 
 
 ### Vídeo
-https://github.com/user-attachments/assets/791b79bf-d9c6-46f1-b54b-f5861aa23938
+<div style= align-itens: center>https://github.com/user-attachments/assets/791b79bf-d9c6-46f1-b54b-f5861aa23938
+</div>
 
